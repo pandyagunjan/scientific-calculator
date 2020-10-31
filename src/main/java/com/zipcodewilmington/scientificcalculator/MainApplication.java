@@ -1,7 +1,7 @@
 package com.zipcodewilmington.scientificcalculator;
 
 /**
- * Created by leon on 2/9/18.
+ * Updated by Gunjan /Eric /Munir
  */
 public class MainApplication {
     public static void main(String[] args) {
@@ -13,18 +13,24 @@ public class MainApplication {
         Boolean flagToContinue=true;
 
 
-
-        Console.println("Welcome to our calculator!");
+        Console.println("\u001B[31m  Welcome to our calculator! \u001B[31m");
         //String s = Console.getStringInput("Enter a string");
 
         while (flagToContinue) {
 
-            System.out.println(">> Calculator options available: <<" );
-            System.out.println("1.  Add ");
-            System.out.println("2.  Subtract");
-            //System.out.println("3.  Multiply ");
-            System.out.println("Other.  To Quit");
-            choiceInput = Console.getIntegerInput("Please enter the choice of action you want to perform:");
+            System.out.println(" \u001B[36m >> Calculator options available << \u001B[36m" );
+            System.out.println("\u001B[0m");
+            System.out.println("        1.  Add ");
+            System.out.println("        2.  Subtract");
+            System.out.println("        3.  Multiply ");
+            System.out.println("        4.  Division");
+            System.out.println("        5.  Modulus ");
+            System.out.println("        6.  Square Root");
+            System.out.println("        7.  Average");
+            System.out.println("        8.  Exponentiation");
+            System.out.println("        9.  Mode");
+            System.out.println("        Other.  To Quit");
+            choiceInput = Console.getIntegerInput("\u001B[34m Please enter the choice of action you want to perform: \u001B[34m");
 
 
             try {
@@ -36,6 +42,7 @@ public class MainApplication {
                         //answer = num1 + num2;
                         answer=CalcMethods.addTheNumbers(num1,num2);
                         Console.println("Addition output : %.2f", answer);
+                        System.out.println("\u001B[0m");
                         break;
 
                     case 2:
@@ -45,7 +52,19 @@ public class MainApplication {
                         //answer = num1 - num2;
                         answer=CalcMethods.subtractNumbers(num1,num2);
                         Console.println("Subtraction output : %.2f", answer);
+                        System.out.println("\u001B[0m");
                         break;
+
+                    case 8:
+                        //Integer i = Console.getIntegerInput("Enter an integer");
+                        num1 = Console.getDoubleInput("Enter a Number 1 :");
+                        num2 = Console.getDoubleInput("Enter a Number 2 :");
+                        //answer = num1 - num2;
+                        answer=CalcMethods.exponentNumbers(num1,num2);
+                        Console.println("Exponents of %.2f ^ %.2f is : %.2f  \n", num1,num2,answer);
+                        System.out.println("\u001B[0m");
+                        break;
+
 
                     default:
                         flagToContinue=false;
