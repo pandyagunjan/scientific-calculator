@@ -60,12 +60,43 @@ public class CalcMethods {
 
     public static Integer switchDisplay()
     {
-        Integer switchMode = Console.getIntegerInput("\u001B[34m Display Mode: 1/Decimal 2/Octal 3/Binary 4/Hexadecimal  \u001B[34m");
-        if(switchMode < 1 || switchMode>5)
-        {
-            switchMode = Console.getIntegerInput("\u001B[34m Reselect the Display Mode: 1/Decimal 2/Octal 3/Binary 4/Hexadecimal  \u001B[34m");
-        }
+        Integer switchMode = Console.getIntegerInput("\u001B[34m Display Mode (Applicable to +,-,/,*):\n 1.Decimal \n 2.Octal \n 3.Binary\n 4.Hexadecimal  \u001B[34m");
+         if(switchMode < 1 || switchMode > 4)
+         {
+             switchMode = Console.getIntegerInput("\u001B[34m Reselect the Display Mode: 1.Decimal 2.Octal 3.Binary 4.Hexadecimal  \u001B[34m");
+             if(switchMode < 1 || switchMode > 4)
+             {
+                 switchDisplay();
+             }
+         }
 
         return switchMode;
+    }
+
+    public static void displayModeOutput(Integer switchMode ,Double answer)
+    {
+        int tempAnswer;
+        String strOutput;
+        String pressContinue="";
+        switch(switchMode)
+        {
+            case 1 :
+                Console.println("Addition output : %.2f", answer);
+            case 2:   tempAnswer = (int) Math.round(answer);
+                strOutput= Integer.toOctalString(tempAnswer);
+                Console.println("Output in Octal : %s ", strOutput);
+                break;
+            case 3:   tempAnswer = (int) Math.round(answer);
+                strOutput= Integer.toBinaryString(tempAnswer);
+                Console.println("Output in Binary : %s ", strOutput);
+                break;
+            case 4:   tempAnswer = (int) Math.round(answer);
+                strOutput= Integer.toHexString(tempAnswer);
+                Console.println("Output in Hexadecimal : %s ", strOutput);
+                break;
+        }
+        System.out.println("\u001B[0m");
+        pressContinue=Console.getStringInput("Press enter to continue...");
+
     }
 }

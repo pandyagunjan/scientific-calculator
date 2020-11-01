@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 /**
 Updated by Gunjan 10/31/2020
  */
-public class TestMainApplication {
+public class TestMethodsG {
    // private final static Logger logger = Logger.getLogger(LogginLab.class.getName());
 
     @org.junit.Before
@@ -96,6 +96,61 @@ public class TestMainApplication {
         assertEquals("NaN", String.valueOf(CalcMethods.inversrseSine(2D)));
     }
 
+    @org.junit.Test
+    public void testInverseCoSinePositiveUC1() {
+        assertEquals("0.0", String.valueOf(CalcMethods.inverseCosine(1D)));
+
+    }
+
+    @org.junit.Test
+    public void testInverseCoSineNegativeUC() {
+        assertNotEquals("87.6", String.valueOf(CalcMethods.inverseCosine(4D)));
+
+    }
+    @org.junit.Test
+    public void testInverseCoSinePositiveUC2() {
+        assertEquals("NaN", String.valueOf(CalcMethods.inverseCosine(2D)));
+    }
+
+    @org.junit.Test
+    public void testInverseTanPositiveUC1() {
+        assertEquals("0.7853981633974483", String.valueOf(CalcMethods.invserseTangent(1D)));
+    }
+
+    @org.junit.Test
+    public void testInverseTanNegativeUC() {
+        assertNotEquals("87.6", String.valueOf(CalcMethods.invserseTangent(4D)));
+
+    }
+    @org.junit.Test
+    public void testInverseTanPositiveUC2() {
+        assertEquals("1.1071487177940904", String.valueOf(CalcMethods.invserseTangent(2D)));
+    }
+    @org.junit.Test
+    public void testcubeRootPositiveUC1() {
+        assertEquals("1.2599210498948732", String.valueOf(CalcMethods.cubeRoot(2D)));
+    }
+    @org.junit.Test
+    public void testcubeRootNegativeUC1() {
+        assertNotEquals("1.1071487177940904", String.valueOf(CalcMethods.cubeRoot(2D)));
+    }
+    @org.junit.Test
+    public void testcubeRootPositiveUC2() {
+        assertEquals("1.2599210498948732", String.valueOf(CalcMethods.cubeRoot(2D)));
+    }
+
+    @org.junit.Test
+    public void testTenthPowPositiveUC1() {
+        assertEquals("100.0", String.valueOf(CalcMethods.tenthPow(2D)));
+    }
+    @org.junit.Test
+    public void testTenthPowNegativeUC1() {
+        assertNotEquals("15.0", String.valueOf(CalcMethods.tenthPow(2D)));
+    }
+    @org.junit.Test
+    public void testTenthPowPositiveUC2() {
+        assertEquals("100000.0", String.valueOf(CalcMethods.tenthPow(5D)));
+    }
 
 }
 

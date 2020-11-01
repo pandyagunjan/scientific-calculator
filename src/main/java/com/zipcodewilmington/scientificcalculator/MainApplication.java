@@ -1,5 +1,7 @@
 package com.zipcodewilmington.scientificcalculator;
 
+import com.sun.javafx.css.CalculatedValue;
+
 /**
  * Updated by Gunjan /Eric /Munir
  */
@@ -12,26 +14,21 @@ public class MainApplication {
         Integer choiceInput;
         Integer switchMode;
         Boolean flagToContinue=true;
+
         String pressContinue="";
 
-
         Console.println("\u001B[31m      Welcome to our calculator! \u001B[31m");
-        //String s = Console.getStringInput("Enter a string");
         switchMode = CalcMethods.switchDisplay();
-                /*= Console.getIntegerInput("\u001B[34m Display Mode: 1/Decimal 2/Octal 3/Binary 4/Hexadecimal  \u001B[34m");
-        if(switchMode < 1 || switchMode>5)
-        {
-            switchMode = Console.getIntegerInput("\u001B[34m Reselect the Display Mode: 1/Decimal 2/Octal 3/Binary 4/Hexadecimal  \u001B[34m");
-        }*/
+
 
         while (flagToContinue) {
             int displayZero=0;
             System.out.println(" \u001B[36m >> Calculator options available << \u001B[36m\u001B[0m" );
             //System.out.println("\u001B[0m");
-            System.out.println("        1.  Add ");
-            System.out.println("        2.  Subtract");
-            System.out.println("        3.  Multiply ");
-            System.out.println("        4.  Division");
+            System.out.println("        1.  Add *");
+            System.out.println("        2.  Subtract *");
+            System.out.println("        3.  Multiply *");
+            System.out.println("        4.  Division *");
             System.out.println("        5.  Modulus ");
             System.out.println("        6.  Square Root");
             System.out.println("        7.  Average");
@@ -55,22 +52,7 @@ public class MainApplication {
                        num1 = Console.getDoubleInput("Enter a Number 1 :");
                        num2 = Console.getDoubleInput("Enter a Number 2 :");
                        answer=CalcMethods.addTheNumbers(num1,num2);
-                       switch(switchMode)
-                       {
-                           case 1 :
-
-                                    Console.println("Addition output : %.2f", answer);
-
-                            case 2:  int tempAnswer = (int) Math.round(answer);
-                                     String str= Integer.toBinaryString(tempAnswer);
-                                     Console.println("Output in Binary : %s ", str);
-
-
-
-                       }
-                      // Console.println("Addition output : %.2f", answer);
-                       System.out.println("\u001B[0m");
-                       pressContinue=Console.getStringInput("Press to continue...");
+                       CalcMethods.displayModeOutput(switchMode,answer);
                        break;
 
                  case 2:
@@ -79,9 +61,7 @@ public class MainApplication {
                         num2 = Console.getDoubleInput("Enter a Number 2 :");
                         //answer = num1 - num2;
                         answer=CalcMethods.subtractNumbers(num1,num2);
-                        Console.println("Subtraction output : %.2f", answer);
-                        System.out.println("\u001B[0m");
-                        pressContinue=Console.getStringInput("Press to continue...");
+                        CalcMethods.displayModeOutput(switchMode,answer);
                         break;
 
                     case 8:
@@ -145,7 +125,7 @@ public class MainApplication {
                         break;
 
                     case 27:
-                        switchMode = Console.switchDisplay();
+                        switchMode = CalcMethods.switchDisplay();
                         continue;
 
                     default:
