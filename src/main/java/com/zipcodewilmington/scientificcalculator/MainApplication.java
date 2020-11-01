@@ -25,22 +25,30 @@ public class MainApplication {
             int displayZero=0;
             System.out.println(" \u001B[36m >> Calculator options available << \u001B[36m\u001B[0m" );
             //System.out.println("\u001B[0m");
-            System.out.println("        1.  Add *");
-            System.out.println("        2.  Subtract *");
-            System.out.println("        3.  Multiply *");
-            System.out.println("        4.  Division *");
+            System.out.println("        1.  Add ");
+            System.out.println("        2.  Subtract ");
+            System.out.println("        3.  Multiply ");
+            System.out.println("        4.  Division ");
             System.out.println("        5.  Modulus ");
             System.out.println("        6.  Square Root");
-            System.out.println("        7.  Average");
-            System.out.println("        8.  Exponentiation");
-            System.out.println("        9.  Mode");
-            System.out.println("        21. Factorial");
-            System.out.println("        22. Inverse Sin");
-            System.out.println("        23. Inverse Cosine");
-            System.out.println("        24. Inverse Tangent");
-            System.out.println("        25. Cube Root");
-            System.out.println("        26. Tenth Power");
-            System.out.println("        27. Switch Display Mode");
+            System.out.println("        7.  Cube Root ");
+            System.out.println("        8.  Square");
+            System.out.println("        9.  Factorial ");
+            System.out.println("        10. Exponentiation");
+            System.out.println("        11. Sign Inverter");
+            System.out.println("        12. Inverse");
+            System.out.println("        13. Sin");
+            System.out.println("        14. Cosine");
+            System.out.println("        15. Tangent");
+            System.out.println("        16. Inverse Sine");
+            System.out.println("        17. Inverse Cosine");
+            System.out.println("        18. Inverse Tangent");
+            System.out.println("        19. Memory Options");
+            System.out.println("        20. Logarithmic Functions");
+            System.out.println("        21. Print previous answer");
+            System.out.println("        22. Radians or degrees");
+            System.out.println("        23. Tenth Power");
+            System.out.println("        24. Switch Display Mode");
             System.out.println("        Other.  To Quit");
             choiceInput = Console.getIntegerInput("\u001B[34m Please enter the choice of action you want to perform: \u001B[34m");
 
@@ -64,7 +72,7 @@ public class MainApplication {
                         CalcMethods.displayModeOutput(switchMode,answer);
                         break;
 
-                    case 8:
+                    case 10:
                         //Integer i = Console.getIntegerInput("Enter an integer");
                         num1 = Console.getDoubleInput("Enter a Number 1 :");
                         num2 = Console.getDoubleInput("Enter a Number 2 :");
@@ -74,7 +82,7 @@ public class MainApplication {
                         System.out.println("\u001B[0m");
                         pressContinue=Console.getStringInput("Press to continue...");
                         break;
-                    case 21:
+                    case 9:
                         num1 = Console.getDoubleInput("Enter a Number :");
                         answer=CalcMethods.findFactorial(num1);
                         Console.println("Factorial of %.2f is : %.2f  \n", num1,answer);
@@ -82,7 +90,7 @@ public class MainApplication {
                         pressContinue=Console.getStringInput("Press to continue...");
                         break;
 
-                    case 22:
+                    case 16:
 
                         num1 = Console.getDoubleInput("Enter a Number :");
                         answer=CalcMethods.inversrseSine(num1);
@@ -90,7 +98,7 @@ public class MainApplication {
                         System.out.println("\u001B[0m");
                         pressContinue=Console.getStringInput("Press to continue...");
                         break;
-                    case 23:
+                    case 17:
                         //Integer i = Console.getIntegerInput("Enter an integer");
                         num1 = Console.getDoubleInput("Enter a Number :");
                         answer=CalcMethods.inverseCosine(num1);
@@ -98,7 +106,7 @@ public class MainApplication {
                         System.out.println("\u001B[0m");
                         pressContinue=Console.getStringInput("Press to continue...");
                         break;
-                    case 24:
+                    case 18:
                         //Integer i = Console.getIntegerInput("Enter an integer");
                         num1 = Console.getDoubleInput("Enter a Number :");
                         answer=CalcMethods.invserseTangent(num1);
@@ -106,7 +114,7 @@ public class MainApplication {
                         System.out.println("\u001B[0m");
                         pressContinue=Console.getStringInput("Press to continue...");
                         break;
-                    case 25:
+                    case 7:
                         //Integer i = Console.getIntegerInput("Enter an integer");
                         num1 = Console.getDoubleInput("Enter a Number :");
                         answer=CalcMethods.cubeRoot(num1);
@@ -115,7 +123,7 @@ public class MainApplication {
                         pressContinue=Console.getStringInput("Press to continue...");
                         break;
 
-                    case 26:
+                    case 23:
                         //Integer i = Console.getIntegerInput("Enter an integer");
                         num1 = Console.getDoubleInput("Enter a Number :");
                         answer=CalcMethods.tenthPow(num1);
@@ -124,7 +132,7 @@ public class MainApplication {
                         pressContinue=Console.getStringInput("Press to continue...");
                         break;
 
-                    case 27:
+                    case 24:
                         switchMode = CalcMethods.switchDisplay();
                         continue;
 
@@ -142,12 +150,7 @@ catch(NullPointerException e)
             System.out.print("NullPointerException Caught");
         }
     }
-        //Integer i = Console.getIntegerInput("Enter an integer");
-        //Double d = Console.getDoubleInput("Enter a double.");
 
-        //Console.println("The user input %s as a string", s);
-      //  Console.println("The user input %s as a integer", i);
-      //  Console.println("The user input %s as a d", d);
     }
 
 

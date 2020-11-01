@@ -82,6 +82,7 @@ public class CalcMethods {
         {
             case 1 :
                 Console.println("Addition output : %.2f", answer);
+                break;
             case 2:   tempAnswer = (int) Math.round(answer);
                 strOutput= Integer.toOctalString(tempAnswer);
                 Console.println("Output in Octal : %s ", strOutput);
