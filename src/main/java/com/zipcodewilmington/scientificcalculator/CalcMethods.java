@@ -58,5 +58,14 @@ public class CalcMethods {
         return Math.pow(10,num1);
     }
 
+    public static Integer switchDisplay()
+    {
+        Integer switchMode = Console.getIntegerInput("\u001B[34m Display Mode: 1/Decimal 2/Octal 3/Binary 4/Hexadecimal  \u001B[34m");
+        if(switchMode < 1 || switchMode>5)
+        {
+            switchMode = Console.getIntegerInput("\u001B[34m Reselect the Display Mode: 1/Decimal 2/Octal 3/Binary 4/Hexadecimal  \u001B[34m");
+        }
 
+        return switchMode;
+    }
 }

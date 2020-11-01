@@ -47,8 +47,8 @@ public class Console {
         Scanner scanner = new Scanner(System.in);
 
         Double userInputDouble = 0D;
-        println(prompt);
-
+        print(prompt,userInputDouble);
+        //println(userInputDouble);
 
             if (scanner.hasNextDouble()) {
                 userInputDouble = scanner.nextDouble();
@@ -59,6 +59,14 @@ public class Console {
              }
 
         return userInputDouble;
+    }
+
+    public static  String getOperationInput(String prompt)
+    {
+        Scanner operation = new Scanner(System.in);
+        println (prompt);
+        String ops = operation.nextLine();
+        return ops;
     }
 
 

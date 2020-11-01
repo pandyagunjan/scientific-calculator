@@ -1,0 +1,30 @@
+@startuml
+class MainApplication {
+
+        Double num1
+        Double num2
+        Double answer
+        Integer choiceInput
+        Boolean flagToContinue
+        String pressContinue
+        }
+
+ class CalcMethods extends MainApplication{
+
+    +static Double addTheNumbers(num1,  num2)
+    +static Double subtractNumbers(Double num1 , Double num2)
+    +static double exponentNumbers(Double num1 , Double num2)
+    +static Double inversrseSine(Double num1)
+    +static Double inverseCosine(Double num1)
+    +static Double invserseTangent(Double num1)
+    +static Double findFactorial(Double num1)
+    +static Double cubeRoot(Double num1)
+    +static double tenthPow(double num1)
+
+
+
+}
+
+
+@enduml
+

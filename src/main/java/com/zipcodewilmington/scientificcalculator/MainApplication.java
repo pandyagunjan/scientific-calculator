@@ -10,16 +10,24 @@ public class MainApplication {
         Double num2;
         Double answer;
         Integer choiceInput;
+        Integer switchMode;
         Boolean flagToContinue=true;
+        String pressContinue="";
 
 
-        Console.println("\u001B[31m  Welcome to our calculator! \u001B[31m");
+        Console.println("\u001B[31m      Welcome to our calculator! \u001B[31m");
         //String s = Console.getStringInput("Enter a string");
+        switchMode = CalcMethods.switchDisplay();
+                /*= Console.getIntegerInput("\u001B[34m Display Mode: 1/Decimal 2/Octal 3/Binary 4/Hexadecimal  \u001B[34m");
+        if(switchMode < 1 || switchMode>5)
+        {
+            switchMode = Console.getIntegerInput("\u001B[34m Reselect the Display Mode: 1/Decimal 2/Octal 3/Binary 4/Hexadecimal  \u001B[34m");
+        }*/
 
         while (flagToContinue) {
-
-            System.out.println(" \u001B[36m >> Calculator options available << \u001B[36m" );
-            System.out.println("\u001B[0m");
+            int displayZero=0;
+            System.out.println(" \u001B[36m >> Calculator options available << \u001B[36m\u001B[0m" );
+            //System.out.println("\u001B[0m");
             System.out.println("        1.  Add ");
             System.out.println("        2.  Subtract");
             System.out.println("        3.  Multiply ");
@@ -35,23 +43,37 @@ public class MainApplication {
             System.out.println("        24. Inverse Tangent");
             System.out.println("        25. Cube Root");
             System.out.println("        26. Tenth Power");
+            System.out.println("        27. Switch Display Mode");
             System.out.println("        Other.  To Quit");
             choiceInput = Console.getIntegerInput("\u001B[34m Please enter the choice of action you want to perform: \u001B[34m");
 
-
             try {
                 switch (choiceInput) {
-                    case 1:
-                        //Integer i = Console.getIntegerInput("Enter an integer");
-                        num1 = Console.getDoubleInput("Enter a Number 1 :");
-                        num2 = Console.getDoubleInput("Enter a Number 2 :");
-                        //answer = num1 + num2;
-                        answer=CalcMethods.addTheNumbers(num1,num2);
-                        Console.println("Addition output : %.2f", answer);
-                        System.out.println("\u001B[0m");
-                        break;
+                   case 1 :
 
-                    case 2:
+                       Console.println("Current number is : "  + displayZero);
+                       num1 = Console.getDoubleInput("Enter a Number 1 :");
+                       num2 = Console.getDoubleInput("Enter a Number 2 :");
+                       answer=CalcMethods.addTheNumbers(num1,num2);
+                       switch(switchMode)
+                       {
+                           case 1 :
+
+                                    Console.println("Addition output : %.2f", answer);
+
+                            case 2:  int tempAnswer = (int) Math.round(answer);
+                                     String str= Integer.toBinaryString(tempAnswer);
+                                     Console.println("Output in Binary : %s ", str);
+
+
+
+                       }
+                      // Console.println("Addition output : %.2f", answer);
+                       System.out.println("\u001B[0m");
+                       pressContinue=Console.getStringInput("Press to continue...");
+                       break;
+
+                 case 2:
                         //Integer i = Console.getIntegerInput("Enter an integer");
                         num1 = Console.getDoubleInput("Enter a Number 1 :");
                         num2 = Console.getDoubleInput("Enter a Number 2 :");
@@ -59,6 +81,7 @@ public class MainApplication {
                         answer=CalcMethods.subtractNumbers(num1,num2);
                         Console.println("Subtraction output : %.2f", answer);
                         System.out.println("\u001B[0m");
+                        pressContinue=Console.getStringInput("Press to continue...");
                         break;
 
                     case 8:
@@ -69,12 +92,14 @@ public class MainApplication {
                         answer=CalcMethods.exponentNumbers(num1,num2);
                         Console.println("Exponents of %.2f ^ %.2f is : %.2f  \n", num1,num2,answer);
                         System.out.println("\u001B[0m");
+                        pressContinue=Console.getStringInput("Press to continue...");
                         break;
                     case 21:
                         num1 = Console.getDoubleInput("Enter a Number :");
                         answer=CalcMethods.findFactorial(num1);
                         Console.println("Factorial of %.2f is : %.2f  \n", num1,answer);
                         System.out.println("\u001B[0m");
+                        pressContinue=Console.getStringInput("Press to continue...");
                         break;
 
                     case 22:
@@ -83,6 +108,7 @@ public class MainApplication {
                         answer=CalcMethods.inversrseSine(num1);
                         Console.println("Inverse Sine of %.2f is : %.2f  \n", num1,answer);
                         System.out.println("\u001B[0m");
+                        pressContinue=Console.getStringInput("Press to continue...");
                         break;
                     case 23:
                         //Integer i = Console.getIntegerInput("Enter an integer");
@@ -90,6 +116,7 @@ public class MainApplication {
                         answer=CalcMethods.inverseCosine(num1);
                         Console.println("Inverse Cosine of %.2f is : %.2f  \n", num1,answer);
                         System.out.println("\u001B[0m");
+                        pressContinue=Console.getStringInput("Press to continue...");
                         break;
                     case 24:
                         //Integer i = Console.getIntegerInput("Enter an integer");
@@ -97,6 +124,7 @@ public class MainApplication {
                         answer=CalcMethods.invserseTangent(num1);
                         Console.println("Inverse Tangent of %.2f is : %.2f  \n", num1,answer);
                         System.out.println("\u001B[0m");
+                        pressContinue=Console.getStringInput("Press to continue...");
                         break;
                     case 25:
                         //Integer i = Console.getIntegerInput("Enter an integer");
@@ -104,6 +132,7 @@ public class MainApplication {
                         answer=CalcMethods.cubeRoot(num1);
                         Console.println("Cube root of %.2f is : %.2f  \n", num1,answer);
                         System.out.println("\u001B[0m");
+                        pressContinue=Console.getStringInput("Press to continue...");
                         break;
 
                     case 26:
@@ -112,9 +141,12 @@ public class MainApplication {
                         answer=CalcMethods.tenthPow(num1);
                         Console.println("Tenth Power of %.2f is : %.2f  \n", num1,answer);
                         System.out.println("\u001B[0m");
+                        pressContinue=Console.getStringInput("Press to continue...");
                         break;
 
-
+                    case 27:
+                        switchMode = Console.switchDisplay();
+                        continue;
 
                     default:
                         flagToContinue=false;
@@ -137,4 +169,7 @@ catch(NullPointerException e)
       //  Console.println("The user input %s as a integer", i);
       //  Console.println("The user input %s as a d", d);
     }
+
+
+
 }
