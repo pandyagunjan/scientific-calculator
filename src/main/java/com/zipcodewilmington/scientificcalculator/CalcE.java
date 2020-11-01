@@ -2,16 +2,19 @@ package com.zipcodewilmington.scientificcalculator;
 
 import java.util.Scanner;
 
-public class Eric {
+public class CalcE {
     public static void error(){
-        Scanner scan = new Scanner(System.in);
+        /*Scanner scan = new Scanner(System.in);
         System.out.println("Error\n" + "Please input 0 to clear this message.");
+        String clear = scan.next();*/
 
-        String clear = scan.next();
+        String clear = Console.getStringInput("Error\n" + "Please input 0 to clear this message.");
+
         if(!clear.equals("0")){ //Input validation, loops through previous message until 0 is inputted
             while(!clear.equals("0")){
-                System.out.println("Please input 0 to clear this message.");
-                clear = scan.next();
+                /*Console.println("Please input 0 to clear this message.");
+                clear = scan.next();*/
+                clear = Console.getStringInput("Please input 0 to clear this message.");
             }
         }
         Console.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
@@ -25,6 +28,11 @@ public class Eric {
             return input - (input * 2);
         }
         return input + (input * 2);
+    }
+
+    public static Double answer(Double input){//Saves the previous answer onto a variable called answer (probably redundant)
+        double ans = input; //Im gonna need to see the Main code before I can figure out how to implement it
+        return ans;
     }
 
 
