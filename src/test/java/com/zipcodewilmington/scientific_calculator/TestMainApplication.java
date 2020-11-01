@@ -4,6 +4,9 @@ import com.zipcodewilmington.scientificcalculator.CalcE;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import static com.zipcodewilmington.scientificcalculator.CalcE.degRad;
+import static com.zipcodewilmington.scientificcalculator.CalcE.mPlus;
 import static org.junit.Assert.*;
 
 /**
@@ -79,6 +82,63 @@ public class TestMainApplication {
     }*/
     @org.junit.Test
     public void testInverse(){
-        assertEquals(".25", String.valueOf(CalcE.inverse(4.00)));
+        assertEquals("0.25", String.valueOf(CalcE.inverse(4.00)));
+    }
+
+    @org.junit.Test
+    public void testInverter(){
+        assertEquals("-5.0", String.valueOf(CalcE.inverter(5.00)));
+    }
+
+    @org.junit.Test
+    public void testMemoryPlus(){
+        CalcE.memoryPlus(8.00);
+        CalcE.memoryPlus(8.00);
+        assertEquals("16.0", String.valueOf(mPlus));
+    }
+
+    @org.junit.Test
+    public void testMemoryClear(){
+        CalcE.memoryPlus(8.00);
+        CalcE.memoryClear();
+        assertEquals("0.0", String.valueOf(mPlus));
+    }
+
+    @org.junit.Test
+    public void testMemoryRecall(){
+        CalcE.memoryPlus(70.00);
+        assertEquals("70.0", String.valueOf(CalcE.memoryRecall()));
+    }
+
+    @org.junit.Test
+    public void testSwitchMode(){
+        CalcE.switchUnitsMode("Rad");
+        assertEquals("false", String.valueOf(degRad));
+    }
+
+    @org.junit.Test
+    public void testDegRadConverter(){
+        CalcE.switchUnitsMode("Rad");
+        assertEquals("0.49999999999999994", String.valueOf(Math.sin(CalcE.degRadConverter(30.00))));
+    }
+
+    @org.junit.Test
+    public void testLogNat(){
+        assertEquals("0.0", String.valueOf(CalcE.logNat(0.00))); //nat log of e is 1, this is as close to e as I can get in java
+    }
+
+    @org.junit.Test
+    public void testLog(){
+        assertEquals("0.0", String.valueOf(CalcE.log(1.00)));
+    }
+
+    @org.junit.Test
+    public void testLogTen(){
+        assertEquals("0.0", String.valueOf(CalcE.logInv(1.00)));
+    }
+
+    @org.junit.Test
+    public void testAntiLog(){
+        assertEquals("1.0", String.valueOf(CalcE.inverse(1.00)));
     }
 }
