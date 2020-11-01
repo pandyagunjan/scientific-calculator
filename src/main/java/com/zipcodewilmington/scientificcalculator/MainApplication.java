@@ -29,6 +29,12 @@ public class MainApplication {
             System.out.println("        7.  Average");
             System.out.println("        8.  Exponentiation");
             System.out.println("        9.  Mode");
+            System.out.println("        21. Factorial");
+            System.out.println("        22. Inverse Sin");
+            System.out.println("        23. Inverse Cosine");
+            System.out.println("        24. Inverse Tangent");
+            System.out.println("        25. Cube Root");
+            System.out.println("        26. Tenth Power");
             System.out.println("        Other.  To Quit");
             choiceInput = Console.getIntegerInput("\u001B[34m Please enter the choice of action you want to perform: \u001B[34m");
 
@@ -64,6 +70,50 @@ public class MainApplication {
                         Console.println("Exponents of %.2f ^ %.2f is : %.2f  \n", num1,num2,answer);
                         System.out.println("\u001B[0m");
                         break;
+                    case 21:
+                        num1 = Console.getDoubleInput("Enter a Number :");
+                        answer=CalcMethods.findFactorial(num1);
+                        Console.println("Factorial of %.2f is : %.2f  \n", num1,answer);
+                        System.out.println("\u001B[0m");
+                        break;
+
+                    case 22:
+
+                        num1 = Console.getDoubleInput("Enter a Number :");
+                        answer=CalcMethods.inversrseSine(num1);
+                        Console.println("Inverse Sine of %.2f is : %.2f  \n", num1,answer);
+                        System.out.println("\u001B[0m");
+                        break;
+                    case 23:
+                        //Integer i = Console.getIntegerInput("Enter an integer");
+                        num1 = Console.getDoubleInput("Enter a Number :");
+                        answer=CalcMethods.inverseCosine(num1);
+                        Console.println("Inverse Cosine of %.2f is : %.2f  \n", num1,answer);
+                        System.out.println("\u001B[0m");
+                        break;
+                    case 24:
+                        //Integer i = Console.getIntegerInput("Enter an integer");
+                        num1 = Console.getDoubleInput("Enter a Number :");
+                        answer=CalcMethods.invserseTangent(num1);
+                        Console.println("Inverse Tangent of %.2f is : %.2f  \n", num1,answer);
+                        System.out.println("\u001B[0m");
+                        break;
+                    case 25:
+                        //Integer i = Console.getIntegerInput("Enter an integer");
+                        num1 = Console.getDoubleInput("Enter a Number :");
+                        answer=CalcMethods.cubeRoot(num1);
+                        Console.println("Cube root of %.2f is : %.2f  \n", num1,answer);
+                        System.out.println("\u001B[0m");
+                        break;
+
+                    case 26:
+                        //Integer i = Console.getIntegerInput("Enter an integer");
+                        num1 = Console.getDoubleInput("Enter a Number :");
+                        answer=CalcMethods.tenthPow(num1);
+                        Console.println("Tenth Power of %.2f is : %.2f  \n", num1,answer);
+                        System.out.println("\u001B[0m");
+                        break;
+
 
 
                     default:
