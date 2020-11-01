@@ -80,6 +80,7 @@ public class TestMainApplication {
     public void testInverseSinePositiveUC2() {
         assertEquals("NaN", String.valueOf(CalcMethods.inversrseSine(2D)));
     }*/
+
     @org.junit.Test
     public void testInverse(){
         assertEquals("0.25", String.valueOf(CalcE.inverse(4.00)));
