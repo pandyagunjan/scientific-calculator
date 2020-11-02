@@ -47,4 +47,15 @@ class MainApplication {
         +static Double Cos(Double num1)
         +static Double Tan(Double num1)
 }
+class Console extends MainApplication {
+   +static void print(String,Object)
+    +static void println(String,Object)
+    +static String getStringInput(String)
+    +static Double getDoubleInput(String)
+    +static  String getOperationInput(String)
+}
 @enduml
+
+
+
+
