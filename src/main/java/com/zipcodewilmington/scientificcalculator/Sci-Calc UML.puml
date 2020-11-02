@@ -1,0 +1,50 @@
+@startuml
+class MainApplication {
+        Double num1
+        Double num2
+        Double answer
+        Integer choiceInput
+        Boolean flagToContinue
+        String pressContinue
+        }
+ class CalcMethods extends MainApplication{
+    +static Double addTheNumbers(num1,  num2)
+    +static Double subtractNumbers(Double num1 , Double num2)
+    +static double exponentNumbers(Double num1 , Double num2)
+    +static Double inversrseSine(Double num1)
+    +static Double inverseCosine(Double num1)
+    +static Double invserseTangent(Double num1)
+    +static Double findFactorial(Double num1)
+    +static Double cubeRoot(Double num1)
+    +static double tenthPow(double num1)
+    +static void displayModeOutput(Integer,Double)
+    +static Integer switchDisplay()
+}
+ class CalcE extends MainApplication{
+    +static Double mPlus
+    +static Boolean degRad
+    +static void error()
+    +static Double inverse(Double input)
+    +static Double inverter(Double input)
+    +static void memoryPlus(Double input)
+    +static void memoryClear()
+    +static Double memoryRecall()
+    +static void switchUnitsMode(String mode)
+    +static Double degRadConverter(Double input)
+    +static Double logNat(Double input)
+    +static Double log(Double input)
+    +static Double logInv(Double input)
+   +static Double antiLog(Double input)
+}
+     class CalculationsMethods extends MainApplication {
+        +static Double multiplyNumbers(Double,Double)
+        +static Double divideNumbers(Double,Double)
+        +static Double Modulus(Double,Double)
+        +static Double exponentv(Double,Double)
+        +static Double squareroot(Double)
+        +static Double squared(Double)
+        +static Double Sin(Double)
+        +static Double Cos(Double num1)
+        +static Double Tan(Double num1)
+}
+@enduml
