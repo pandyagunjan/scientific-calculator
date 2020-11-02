@@ -18,6 +18,7 @@ public class MainApplication {
         Double ans = 0.00;
 
         String pressContinue="";
+
         Console.println("\u001B[31m      Welcome to calculator made by Eric,Gunjan,Munir ! \u001B[31m");
         switchMode = CalcMethods.switchDisplay();
 
@@ -174,7 +175,7 @@ public class MainApplication {
                         answer=CalculationsMethods.Sin(CalcE.degRadConverter(num1));
                         output=answer;
                         Console.println("Sin output : %.2f", answer);
-                        CalcE.degRadConverter();
+                       // CalcE.degRadConverter();
                         break;
                     case 14:
                         //Integer i = Console.getIntegerInput("Enter an integer");
@@ -304,6 +305,7 @@ catch(NullPointerException e)
     }
 
     }
+
 
 
 }
