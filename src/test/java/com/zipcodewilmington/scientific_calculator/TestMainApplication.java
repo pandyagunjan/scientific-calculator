@@ -1,5 +1,8 @@
 package com.zipcodewilmington.scientific_calculator;
+import com.zipcodewilmington.scientificcalculator.CalcE;
 import com.zipcodewilmington.scientificcalculator.CalcMethods;
+import com.zipcodewilmington.scientificcalculator.CalculationsMethods;
+
 import static com.zipcodewilmington.scientificcalculator.CalcE.degRad;
 import static com.zipcodewilmington.scientificcalculator.CalcE.mPlus;
 

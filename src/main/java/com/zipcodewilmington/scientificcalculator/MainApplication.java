@@ -174,7 +174,6 @@ public class MainApplication {
                         answer=CalculationsMethods.Sin(CalcE.degRadConverter(num1));
                         output=answer;
                         Console.println("Sin output : %.2f", answer);
-                        CalcE.degRadConverter();
                         break;
                     case 14:
                         //Integer i = Console.getIntegerInput("Enter an integer");
