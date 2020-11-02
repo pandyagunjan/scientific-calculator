@@ -76,15 +76,12 @@ public class MainApplication {
                         break;
 
                     case 3:
-                        //Integer i = Console.getIntegerInput("Enter an integer");
                         num1 = Console.getDoubleInput("Enter a Number 1 :");
                         num2 = Console.getDoubleInput("Enter a Number 2 :");
-                        //answer = num1 * num2;
                         answer=CalculationsMethods.multiplyNumbers(num1,num2);
-                        Console.println("Multiplication output : %.2f", answer);
+                        CalcMethods.displayModeOutput(switchMode,answer);
                         output=answer;
                         break;
-
                     case 4:
                         //Integer i = Console.getIntegerInput("Enter an integer");
                         num1 = Console.getDoubleInput("Enter a Number 1 :");
@@ -96,7 +93,7 @@ public class MainApplication {
                         }
                         answer=CalculationsMethods.divideNumbers(num1,num2);
                         output=answer;
-                        Console.println("Division output : %.2f", answer);
+                        CalcMethods.displayModeOutput(switchMode,answer);
                         break;
                     case 5:
                         //Integer i = Console.getIntegerInput("Enter an integer");

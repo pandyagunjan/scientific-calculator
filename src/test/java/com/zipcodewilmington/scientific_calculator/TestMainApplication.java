@@ -200,6 +200,7 @@ public class TestMainApplication {
 
     @org.junit.Test
     public void testMemoryRecall() {
+        CalcE.memoryClear();
         CalcE.memoryPlus(70.00);
         assertEquals("70.0", String.valueOf(CalcE.memoryRecall()));
     }
