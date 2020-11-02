@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e6765696-aef2-4e85-a2c3-69269e493a62" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1jhqeDqqczW0pNgktSOG3azlal6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager" selected="Application.MainApplication">
+    <configuration name="MainApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zipcodewilmington.scientificcalculator.MainApplication" />
+      <module name="scientific_calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zipcodewilmington.scientificcalculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestMainApplication.testDivision" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="scientific_calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zipcodewilmington.scientific_calculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zipcodewilmington.scientific_calculator" />
+      <option name="MAIN_CLASS_NAME" value="com.zipcodewilmington.scientific_calculator.TestMainApplication" />
+      <option name="METHOD_NAME" value="testDivision" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestMainApplication.testMultiplication" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="scientific_calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zipcodewilmington.scientific_calculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zipcodewilmington.scientific_calculator" />
+      <option name="MAIN_CLASS_NAME" value="com.zipcodewilmington.scientific_calculator.TestMainApplication" />
+      <option name="METHOD_NAME" value="testMultiplication" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestMainApplication.testNegDivision" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="scientific_calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zipcodewilmington.scientific_calculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zipcodewilmington.scientific_calculator" />
+      <option name="MAIN_CLASS_NAME" value="com.zipcodewilmington.scientific_calculator.TestMainApplication" />
+      <option name="METHOD_NAME" value="testNegDivision" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestMainApplication.testNegMultiplication" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="scientific_calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zipcodewilmington.scientific_calculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zipcodewilmington.scientific_calculator" />
+      <option name="MAIN_CLASS_NAME" value="com.zipcodewilmington.scientific_calculator.TestMainApplication" />
+      <option name="METHOD_NAME" value="testNegMultiplication" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainApplication" />
+        <item itemvalue="JUnit.TestMainApplication.testMultiplication" />
+        <item itemvalue="JUnit.TestMainApplication.testNegMultiplication" />
+        <item itemvalue="JUnit.TestMainApplication.testDivision" />
+        <item itemvalue="JUnit.TestMainApplication.testNegDivision" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e6765696-aef2-4e85-a2c3-69269e493a62" name="Default Changelist" comment="" />
+      <created>1604266765175</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604266765175</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="240" y="38" width="800" height="717" key="#Intentions" timestamp="1604269592150">
+      <screen x="0" y="23" width="1280" height="732" />
+    </state>
+    <state x="240" y="38" width="800" height="717" key="#Intentions/0.23.1280.732@0.23.1280.732" timestamp="1604269592150" />
+    <state width="1238" height="243" key="GridCell.Tab.0.bottom" timestamp="1604279345234">
+      <screen x="0" y="23" width="1280" height="733" />
+    </state>
+    <state width="1238" height="183" key="GridCell.Tab.0.bottom/0.23.1280.732@0.23.1280.732" timestamp="1604270246678" />
+    <state width="1238" height="243" key="GridCell.Tab.0.bottom/0.23.1280.733@0.23.1280.733" timestamp="1604279345234" />
+    <state width="1238" height="243" key="GridCell.Tab.0.bottom/0.23.1280.734@0.23.1280.734" timestamp="1604279249551" />
+    <state width="1238" height="183" key="GridCell.Tab.0.bottom/0.23.1280.735@0.23.1280.735" timestamp="1604276965682" />
+    <state width="1238" height="243" key="GridCell.Tab.0.center" timestamp="1604279345233">
+      <screen x="0" y="23" width="1280" height="733" />
+    </state>
+    <state width="1238" height="183" key="GridCell.Tab.0.center/0.23.1280.732@0.23.1280.732" timestamp="1604270246677" />
+    <state width="1238" height="243" key="GridCell.Tab.0.center/0.23.1280.733@0.23.1280.733" timestamp="1604279345233" />
+    <state width="1238" height="243" key="GridCell.Tab.0.center/0.23.1280.734@0.23.1280.734" timestamp="1604279249550" />
+    <state width="1238" height="183" key="GridCell.Tab.0.center/0.23.1280.735@0.23.1280.735" timestamp="1604276965681" />
+    <state width="1238" height="243" key="GridCell.Tab.0.left" timestamp="1604279345232">
+      <screen x="0" y="23" width="1280" height="733" />
+    </state>
+    <state width="1238" height="183" key="GridCell.Tab.0.left/0.23.1280.732@0.23.1280.732" timestamp="1604270246676" />
+    <state width="1238" height="243" key="GridCell.Tab.0.left/0.23.1280.733@0.23.1280.733" timestamp="1604279345232" />
+    <state width="1238" height="243" key="GridCell.Tab.0.left/0.23.1280.734@0.23.1280.734" timestamp="1604279249549" />
+    <state width="1238" height="183" key="GridCell.Tab.0.left/0.23.1280.735@0.23.1280.735" timestamp="1604276965675" />
+    <state width="1238" height="243" key="GridCell.Tab.0.right" timestamp="1604279345233">
+      <screen x="0" y="23" width="1280" height="733" />
+    </state>
+    <state width="1238" height="183" key="GridCell.Tab.0.right/0.23.1280.732@0.23.1280.732" timestamp="1604270246677" />
+    <state width="1238" height="243" key="GridCell.Tab.0.right/0.23.1280.733@0.23.1280.733" timestamp="1604279345233" />
+    <state width="1238" height="243" key="GridCell.Tab.0.right/0.23.1280.734@0.23.1280.734" timestamp="1604279249550" />
+    <state width="1238" height="183" key="GridCell.Tab.0.right/0.23.1280.735@0.23.1280.735" timestamp="1604276965681" />
+    <state width="500" height="445" key="SwitcherDM" timestamp="1604279249365">
+      <screen x="0" y="23" width="1280" height="734" />
+    </state>
+    <state width="500" height="445" key="SwitcherDM/0.23.1280.734@0.23.1280.734" timestamp="1604279249365" />
+  </component>
+</project>

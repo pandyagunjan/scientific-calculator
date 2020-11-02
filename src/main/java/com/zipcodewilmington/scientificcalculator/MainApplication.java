@@ -85,7 +85,7 @@ public class MainApplication {
                         break;
 
 
-                    case 6:
+                    case 8:
                         //Integer i = Console.getIntegerInput("Enter an integer");
                         num1 = Console.getDoubleInput("Enter a Number :");
                         //answer = num1 ^ 2;
@@ -95,7 +95,7 @@ public class MainApplication {
 
 
 
-                        case 7:
+                        case 10:
                         //Integer i = Console.getIntegerInput("Enter an integer");
                         num1 = Console.getDoubleInput("Enter a Number 1 :");
                         num2 = Console.getDoubleInput("Enter a Number 2 :");
@@ -104,15 +104,15 @@ public class MainApplication {
                         Console.println("Variable Exponent output : %.2f", answer);
                         break;
 
-                    case 8:
+                    case 6:
                         //Integer i = Console.getIntegerInput("Enter an integer");
                         num1 = Console.getDoubleInput("Enter a Number :");
                         //answer = sqrroot(num1)
                         answer=CalculationsMethods.squareroot(num1);
-                        Console.println("Variable Exponent output : %.2f", answer);
+                        Console.println("Square Root output : %.2f", answer);
                         break;
 
-                    case 9:
+                    case 13:
                         //Integer i = Console.getIntegerInput("Enter an integer");
                         num1 = Console.getDoubleInput("Enter a Number :");
                         //answer = sin(num1)
@@ -120,7 +120,7 @@ public class MainApplication {
                         Console.println("Sin output : %.2f", answer);
                         break;
 
-                    case 10:
+                    case 14:
                         //Integer i = Console.getIntegerInput("Enter an integer");
                         num1 = Console.getDoubleInput("Enter a Number :");
                         //answer = Cos(num1)
@@ -128,7 +128,7 @@ public class MainApplication {
                         Console.println("Cos output : %.2f", answer);
                         break;
 
-                    case 11:
+                    case 15:
                         //Integer i = Console.getIntegerInput("Enter an integer");
                         num1 = Console.getDoubleInput("Enter a Number :");
                         //answer = Tan(num1)
@@ -136,9 +136,9 @@ public class MainApplication {
                         Console.println("Tan output : %.2f", answer);
                         break;
 
-                    case 12: Runtime.getRuntime().exec("clear");
+                   /* case 12: Runtime.getRuntime().exec("clear");
                     System.out.print("\033[H\033[2J");
-                    System.out.flush();
+                    System.out.flush();*/
 
 
 
@@ -152,7 +152,7 @@ public class MainApplication {
                 }
             }
 
-            catch(NullPointerException e)
+            catch(Exception e)
             {
                 System.out.print("NullPointerException Caught");
             }
