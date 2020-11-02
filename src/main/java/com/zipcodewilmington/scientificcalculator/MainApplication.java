@@ -18,7 +18,6 @@ public class MainApplication {
         Double ans = 0.00;
 
         String pressContinue="";
-
         Console.println("\u001B[31m      Welcome to calculator made by Eric,Gunjan,Munir ! \u001B[31m");
         switchMode = CalcMethods.switchDisplay();
 
