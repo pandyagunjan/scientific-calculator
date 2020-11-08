@@ -14,6 +14,8 @@ import static org.junit.Assert.*;
 public class TestMainApplication {
     // private final static Logger logger = Logger.getLogger(LogginLab.class.getName());
 
+    CalcMethods calcTestG= new CalcMethods();
+
     @org.junit.Before
     public void setUp() throws Exception {
     }
@@ -25,154 +27,154 @@ public class TestMainApplication {
     //           Test Cases by Gunjan
     @org.junit.Test
     public void testAdditionPositiveUC1() {
-        assertEquals("4.0", String.valueOf(CalcMethods.addTheNumbers(2D, 2D)));
+        assertEquals("4.0", String.valueOf(calcTestG.addTheNumbers(2D, 2D)));
     }
 
     @org.junit.Test
     public void testAdditionNegativeUC() {
-        assertNotEquals("6.8", String.valueOf(CalcMethods.addTheNumbers(2.2D, 2D)));
+        assertNotEquals("6.8", String.valueOf(calcTestG.addTheNumbers(2.2D, 2D)));
     }
 
     @org.junit.Test
     public void testAdditionPositiveUC2() {
-        assertEquals("57.0", String.valueOf(CalcMethods.addTheNumbers(55D, 2D)));
+        assertEquals("57.0", String.valueOf(calcTestG.addTheNumbers(55D, 2D)));
 
     }
 
     @org.junit.Test
     public void testSubtractionPositiveUC1() {
-        assertEquals("2.0", String.valueOf(CalcMethods.subtractNumbers(8.5D, 6.5D)));
+        assertEquals("2.0", String.valueOf(calcTestG.subtractNumbers(8.5D, 6.5D)));
     }
 
     @org.junit.Test
     public void testSubtractionNegativeUC() {
-        assertNotEquals("0.2", String.valueOf(CalcMethods.subtractNumbers(2.2D, 2D)));
+        assertNotEquals("0.2", String.valueOf(calcTestG.subtractNumbers(2.2D, 2D)));
     }
 
     @org.junit.Test
     public void testSubtractionPositiveUC2() {
-        assertEquals("87.63", String.valueOf(CalcMethods.subtractNumbers(99.85D, 12.22D)));
+        assertEquals("87.63", String.valueOf(calcTestG.subtractNumbers(99.85D, 12.22D)));
 
     }
 
     @org.junit.Test
     public void testExponentPositiveUC1() {
-        assertEquals("125.0", String.valueOf(CalcMethods.exponentNumbers(5D, 3D)));
+        assertEquals("125.0", String.valueOf(calcTestG.exponentNumbers(5D, 3D)));
 
     }
 
     @org.junit.Test
     public void testExponentNegativeUC() {
-        assertNotEquals("87.6", String.valueOf(CalcMethods.exponentNumbers(6.2D, 5D)));
+        assertNotEquals("87.6", String.valueOf(calcTestG.exponentNumbers(6.2D, 5D)));
 
     }
 
     @org.junit.Test
     public void testExponentPositiveUC2() {
-        assertEquals("1024.0", String.valueOf(CalcMethods.exponentNumbers(4D, 5D)));
+        assertEquals("1024.0", String.valueOf(calcTestG.exponentNumbers(4D, 5D)));
 
     }
 
     @org.junit.Test
     public void testFactorialPositiveUC1() {
-        assertEquals("24.0", String.valueOf(CalcMethods.findFactorial(4D)));
+        assertEquals("24.0", String.valueOf(calcTestG.findFactorial(4D)));
 
     }
 
     @org.junit.Test
     public void testFactorialNegativeUC() {
-        assertNotEquals("87.6", String.valueOf(CalcMethods.findFactorial(4D)));
+        assertNotEquals("87.6", String.valueOf(calcTestG.findFactorial(4D)));
 
     }
 
     @org.junit.Test
     public void testFactorialPositiveUC2() {
-        assertEquals("362880.0", String.valueOf(CalcMethods.findFactorial(9D)));
+        assertEquals("362880.0", String.valueOf(calcTestG.findFactorial(9D)));
 
     }
 
     @org.junit.Test
     public void testInverseSinePositiveUC1() {
-        assertEquals("1.5707963267948966", String.valueOf(CalcMethods.inversrseSine(1D)));
+        assertEquals("1.5707963267948966", String.valueOf(calcTestG.inversrseSine(1D)));
 
     }
 
     @org.junit.Test
     public void testInverseSineNegativeUC() {
-        assertNotEquals("87.6", String.valueOf(CalcMethods.inversrseSine(4D)));
+        assertNotEquals("87.6", String.valueOf(calcTestG.inversrseSine(4D)));
 
     }
 
     @org.junit.Test
     public void testInverseSinePositiveUC2() {
-        assertEquals("NaN", String.valueOf(CalcMethods.inversrseSine(2D)));
+        assertEquals("NaN", String.valueOf(calcTestG.inversrseSine(2D)));
     }
 
     @org.junit.Test
     public void testInverseCoSinePositiveUC1() {
-        assertEquals("0.0", String.valueOf(CalcMethods.inverseCosine(1D)));
+        assertEquals("0.0", String.valueOf(calcTestG.inverseCosine(1D)));
 
     }
 
     @org.junit.Test
     public void testInverseCoSineNegativeUC() {
-        assertNotEquals("87.6", String.valueOf(CalcMethods.inverseCosine(4D)));
+        assertNotEquals("87.6", String.valueOf(calcTestG.inverseCosine(4D)));
 
     }
 
     @org.junit.Test
     public void testInverseCoSinePositiveUC2() {
-        assertEquals("NaN", String.valueOf(CalcMethods.inverseCosine(2D)));
+        assertEquals("NaN", String.valueOf(calcTestG.inverseCosine(2D)));
     }
 
     @org.junit.Test
     public void testInverseTanPositiveUC1() {
-        assertEquals("0.7853981633974483", String.valueOf(CalcMethods.invserseTangent(1D)));
+        assertEquals("0.7853981633974483", String.valueOf(calcTestG.invserseTangent(1D)));
     }
 
     @org.junit.Test
     public void testInverseTanNegativeUC() {
-        assertNotEquals("87.6", String.valueOf(CalcMethods.invserseTangent(4D)));
+        assertNotEquals("87.6", String.valueOf(calcTestG.invserseTangent(4D)));
 
     }
 
     @org.junit.Test
     public void testInverseTanPositiveUC2() {
-        assertEquals("1.1071487177940904", String.valueOf(CalcMethods.invserseTangent(2D)));
+        assertEquals("1.1071487177940904", String.valueOf(calcTestG.invserseTangent(2D)));
     }
 
     @org.junit.Test
     public void testcubeRootPositiveUC1() {
-        assertEquals("1.2599210498948732", String.valueOf(CalcMethods.cubeRoot(2D)));
+        assertEquals("1.2599210498948732", String.valueOf(calcTestG.cubeRoot(2D)));
     }
 
     @org.junit.Test
     public void testcubeRootNegativeUC1() {
-        assertNotEquals("1.1071487177940904", String.valueOf(CalcMethods.cubeRoot(2D)));
+        assertNotEquals("1.1071487177940904", String.valueOf(calcTestG.cubeRoot(2D)));
     }
 
     @org.junit.Test
     public void testcubeRootPositiveUC2() {
-        assertEquals("1.2599210498948732", String.valueOf(CalcMethods.cubeRoot(2D)));
+        assertEquals("1.2599210498948732", String.valueOf(calcTestG.cubeRoot(2D)));
     }
 
     @org.junit.Test
     public void testTenthPowPositiveUC1() {
-        assertEquals("100.0", String.valueOf(CalcMethods.tenthPow(2D)));
+        assertEquals("100.0", String.valueOf(calcTestG.tenthPow(2D)));
     }
 
     @org.junit.Test
     public void testTenthPowNegativeUC1() {
-        assertNotEquals("15.0", String.valueOf(CalcMethods.tenthPow(2D)));
+        assertNotEquals("15.0", String.valueOf(calcTestG.tenthPow(2D)));
     }
 
     @org.junit.Test
     public void testTenthPowPositiveUC2() {
-        assertEquals("100000.0", String.valueOf(CalcMethods.tenthPow(5D)));
+        assertEquals("100000.0", String.valueOf(calcTestG.tenthPow(5D)));
     }
 //           Test Cases by Eric
 
-
+/*
 
     @org.junit.Test
     public void testInverse() {
@@ -310,5 +312,8 @@ public class TestMainApplication {
     public void testNegTan() {
         assertNotEquals("1", String.valueOf(CalculationsMethods.Sin(45.00)));
     }
-
+*/
 }
+
+
+
