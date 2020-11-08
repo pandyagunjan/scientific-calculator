@@ -71,7 +71,7 @@ public class CalcMethods {
         switch(switchMode)
         {
             case 1 :
-                displyCons.println("Output in Decimal  : %.2f", answer);
+             displyCons.println("Output in Decimal  : %.2f", answer);
                 break;
             case 2:   tempAnswer = (int) Math.round(answer);
                 strOutput= Integer.toOctalString(tempAnswer);

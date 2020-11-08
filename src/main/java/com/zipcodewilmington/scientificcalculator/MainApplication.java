@@ -8,8 +8,10 @@ import com.sun.javafx.css.CalculatedValue;
 public class MainApplication {
     public static void main(String[] args) {
 
+
         Console useConsole = new Console();
         useConsole.displayConsole();
+     
 
     }
 }
